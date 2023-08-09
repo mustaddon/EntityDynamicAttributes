@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\EntityDynamicAttributes.snk</AssemblyOriginatorKeyFile>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<Version>1.0.0-beta1</Version>
+		<Company></Company>
+		<Authors>Leonid Salavatov</Authors>
+		<Copyright>Leonid Salavatov 2023</Copyright>
+		<PackageId>EntityDynamicAttributes.WebApi</PackageId>
+		<Product>EntityDynamicAttributes.WebApi</Product>
+		<Title>EntityDynamicAttributes.WebApi</Title>
+		<Description>WebApi endpoint extension of EntityDynamicAttributes</Description>
+		<PackageTags>dynamic attributes lambda expressions properties endpoint minimal-api web-api rest-api</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/mustaddon/EntityDynamicAttributes.WebApi</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mustaddon/EntityDynamicAttributes.WebApi</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<NeutralLanguage />
+		<PackageReleaseNotes></PackageReleaseNotes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net6.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.20\ref\net6.0</AspNetCoreRef>
+		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net7.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\7.0.0\ref\net7.0</AspNetCoreRef>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+			<HintPath>$(AspNetCoreRef)\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.AspNetCore.Routing">
+			<HintPath>$(AspNetCoreRef)\Microsoft.AspNetCore.Routing.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EntityDynamicAttributes\EntityDynamicAttributes.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ServiceProviderEndpoint" Version="1.0.2" />
+	</ItemGroup>
+
+</Project>

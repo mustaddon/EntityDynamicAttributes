@@ -1,0 +1,14 @@
+﻿{
+  "profiles": {
+    "Example.WebApi": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "eda/ISchemaBuilder(MyUser)/Build?args=[{}]",
+      "applicationUrl": "https://localhost:7278;http://localhost:5246",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
