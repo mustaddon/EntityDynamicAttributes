@@ -45,5 +45,6 @@ var schema = await services.GetRequiredService<ISchemaBuilder<MyClass>>()
 
 
 ## Example projects
+* [ConsoleApp](https://github.com/mustaddon/EntityDynamicAttributes/tree/main/Examples/Example.ConsoleApp)
 * [WebApi](https://github.com/mustaddon/EntityDynamicAttributes/tree/main/Examples/Example.WebApi)
 
