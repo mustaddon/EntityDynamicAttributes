@@ -1,5 +1,4 @@
 # EntityDynamicAttributes [![NuGet version](https://badge.fury.io/nu/EntityDynamicAttributes.svg?)](http://badge.fury.io/nu/EntityDynamicAttributes)
-Entity Dynamic Attributes
 
 ## Features
 * Lambda expressions

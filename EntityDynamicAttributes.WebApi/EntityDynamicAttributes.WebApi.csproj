@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>..\EntityDynamicAttributes.snk</AssemblyOriginatorKeyFile>
 		<AssemblyVersion>1.0.0</AssemblyVersion>
 		<FileVersion>1.0.0</FileVersion>
-		<Version>1.0.0-beta1</Version>
+		<Version>1.0.0-beta2</Version>
 		<Company></Company>
 		<Authors>Leonid Salavatov</Authors>
-		<Copyright>Leonid Salavatov 2023</Copyright>
+		<Copyright>Leonid Salavatov 2024</Copyright>
 		<PackageId>EntityDynamicAttributes.WebApi</PackageId>
 		<Product>EntityDynamicAttributes.WebApi</Product>
 		<Title>EntityDynamicAttributes.WebApi</Title>
@@ -28,8 +28,9 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net6.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.20\ref\net6.0</AspNetCoreRef>
-		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net7.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\7.0.0\ref\net7.0</AspNetCoreRef>
+		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net6.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.25\ref\net6.0</AspNetCoreRef>
+		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net7.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\7.0.14\ref\net7.0</AspNetCoreRef>
+		<AspNetCoreRef Condition="'$(TargetFramework)' == 'net8.0'">C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\8.0.0\ref\net8.0</AspNetCoreRef>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -46,7 +47,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ServiceProviderEndpoint" Version="1.0.2" />
+		<PackageReference Include="ServiceProviderEndpoint" Version="1.1.0" />
 	</ItemGroup>
 
 </Project>
