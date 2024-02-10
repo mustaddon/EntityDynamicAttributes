@@ -18,8 +18,8 @@
 		<Description>WebApi endpoint extension of EntityDynamicAttributes</Description>
 		<PackageTags>dynamic attributes lambda expressions properties endpoint minimal-api web-api rest-api</PackageTags>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageProjectUrl>https://github.com/mustaddon/EntityDynamicAttributes.WebApi</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/mustaddon/EntityDynamicAttributes.WebApi</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/mustaddon/EntityDynamicAttributes</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mustaddon/EntityDynamicAttributes</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
